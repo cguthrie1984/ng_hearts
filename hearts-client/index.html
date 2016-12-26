@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="en" data-ng-app="hearts">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearts Client</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/hand.component.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Hearts</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns" data-ng-controller="hearts_table">
+        <div class="player" data-ng-repeat="player in data.players">
+          <hand></hand>
+        </div>
+      </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+  </body>
+</html>
